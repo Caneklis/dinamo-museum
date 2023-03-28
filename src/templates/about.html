@@ -1,0 +1,246 @@
+---
+title: О Музее
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="textpage anchor" id="section-1">
+  <img class="textpage__head-image" src="/images/textpage/about-museum-head.jpg" alt="Описание изображения">
+  <div class="textpage__wrapper">
+    <article class="textpage__text">
+      <header class="textpage__text-head">
+        <h2 class="section-title">История</h2>
+      </header>
+      <div class="textpage__text-content">
+        <p>Текст&nbsp;&mdash; тестовый! Музей Всероссийского физкультурно-спортивного общества &laquo;Динамо&raquo;
+          начал
+          свою работу в&nbsp;1988&nbsp;году. Инициатором его создания стал Совет ветеранов общества.</p>
+        <p>Физкультурно-спортивное общество &laquo;Динамо&raquo; ведет свою историю с&nbsp;1923&nbsp;года. Здесь
+          сотрудникам органов безопасности и&nbsp;правопорядка предоставлялась возможность заниматься спортом.
+          За&nbsp;годы работы общество &laquo;Динамо&raquo; принесло стране множество олимпийских наград.
+          &laquo;Динамо&raquo; занималось возрождением отечественного бокса, развивало стрелковый спорт и&nbsp;самбо.
+          Здесь&nbsp;же впервые в&nbsp;СССР появилась спортивная медицина.</p>
+        <p>Музей общества &laquo;Динамо&raquo; собирались организовать еще в&nbsp;1959&nbsp;году, но&nbsp;помещение под
+          него было выделено только после Олимпиады-80. Экспонаты храняться под трибунами БСА Центрального стадиона
+          &laquo;Динамо&raquo;, постоянная экспозиция размещается в&nbsp;двухэтажном здании у&nbsp;Северной трибуны.
+          В&nbsp;данное время коллекция музея насчитывает более 10,5&nbsp;тыс. экспонатов основного фонда
+          и&nbsp;7&nbsp;тыс. вспомогательного.</p>
+        <p>Музей спортивного общества &laquo;Динамо&raquo; посещают воспитанники спортивных секций, подшефных детских
+          домов, учащиеся школ, техникумов, военнослужащие ведомств правопорядка и&nbsp;безопасности&nbsp;РФ,
+          болельщики,
+          ветераны спорта, сотрудники динамовских организаций и&nbsp;иностранные гости.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="textpage__slider">
+    <div class="waterfall-slider swiper">
+      <div class="swiper-wrapper">
+        {% for images in range(0, 8) -%}
+        <div class="swiper-slide waterfall-slider__slide">
+          <img src="/images/textpage/textpage-slider-photo.jpg" alt="Описание для изображения">
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="textpage__wrapper">
+    <article class="textpage__text anchor" id="section-2">
+      <header class="textpage__text-head">
+        <h2 class="section-title">Музей сегодня</h2>
+      </header>
+      <div class="textpage__text-content">
+        <p>Текст&nbsp;&mdash; тестовый! Музей Всероссийского физкультурно-спортивного общества &laquo;Динамо&raquo;
+          начал свою работу в&nbsp;1988&nbsp;году. Инициатором его создания стал Совет ветеранов общества.
+          Физкультурно-спортивное общество &laquo;Динамо&raquo; ведет свою историю с&nbsp;1923&nbsp;года. Здесь
+          сотрудникам органов безопасности и&nbsp;правопорядка предоставлялась возможность заниматься спортом.
+          За&nbsp;годы работы общество &laquo;Динамо&raquo; принесло стране множество олимпийских наград.
+          &laquo;Динамо&raquo; занималось возрождением отечественного бокса, развивало стрелковый спорт и&nbsp;самбо.
+          Здесь&nbsp;же впервые в&nbsp;СССР появилась спортивная медицина.</p>
+
+        <p>Музей общества &laquo;Динамо&raquo; собирались организовать еще в&nbsp;1959&nbsp;году, но&nbsp;помещение под
+          него было выделено только после Олимпиады-80. Экспонаты храняться под трибунами БСА Центрального стадиона
+          &laquo;Динамо&raquo;, постоянная экспозиция размещается в&nbsp;двухэтажном здании у&nbsp;Северной трибуны.
+          В&nbsp;данное время коллекция музея насчитывает более 10,5&nbsp;тыс. экспонатов основного фонда
+          и&nbsp;7&nbsp;тыс. вспомогательного.</p>
+      </div>
+    </article>
+  </div>
+
+  <section class="promo" id="promo">
+    <div class="promo__wrapper">
+      <div class="promo__slider  swiper">
+        <div class="swiper-wrapper">
+          <article class="promo__article  swiper-slide">
+            <div class="promo__text">
+              <p>Музей тщательно хранит историю спортивного общества, которое вырастило множество олимпийских чемпионов
+              </p>
+              <a href="#" class="button">Купить билет</a>
+            </div>
+            <div class="promo__title">
+              <h2><span>260</span> персоналий хранит <br>
+                медиатека Общества</h2>
+            </div>
+            <div class="promo__image">
+              <img src="images/main-slider/hokkey.png" alt="">
+            </div>
+          </article>
+          <article class="promo__article  swiper-slide">
+            <div class="promo__text">
+              <p>Музей предлагает полное погружение в&nbsp;историю Общества &laquo;Динамо&raquo; &mdash;
+                с&nbsp;даты основания в&nbsp;1923&nbsp;г.
+                и&nbsp;до&nbsp;сегодняшних дней!
+              </p>
+              <a href="#" class="button">Купить билет</a>
+            </div>
+            <div class="promo__title">
+              <h2><span>700 <sup>м<sup>2</sup></sup></span> современной экспозиции,
+                наполненной мультимедийными
+                решениями</h2>
+            </div>
+            <div class="promo__image">
+              <img src="images/main-slider/football.png" alt="">
+            </div>
+          </article>
+          <article class="promo__article  swiper-slide">
+            <div class="promo__text  promo__text--right">
+              <p>В&nbsp;экспозиции представлены оригинальные экспонаты &mdash;от первых значков &laquo;Динамо&raquo;
+                и&nbsp;исторических документов до&nbsp;медалей современности.
+              </p>
+              <a href="#" class="button">Купить билет</a>
+            </div>
+            <div class="promo__title">
+              <h2><span>200</span> уникальных экспонатов <br>
+                в экспозиции</h2>
+            </div>
+            <div class="promo__image  promo__image--left">
+              <img src="images/main-slider/box.png" alt="">
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="textpage__wrapper">
+    <article class="textpage__text anchor" id="section-3">
+      <header class="textpage__text-head">
+        <h2 class="section-title">Музейное кафе</h2>
+      </header>
+
+      <div class="textpage__image-content">
+        <img src="/images/textpage/textpage-photo-1.jpg" alt="Описание изображения">
+      </div>
+
+      <div class="textpage__text-content">
+        <p>Текст&nbsp;&mdash; тестовый! Музей Всероссийского физкультурно-спортивного общества &laquo;Динамо&raquo;
+          начал свою работу в&nbsp;1988&nbsp;году. Инициатором его создания стал Совет ветеранов общества.
+          Физкультурно-спортивное общество &laquo;Динамо&raquo; ведет свою историю с&nbsp;1923&nbsp;года. Здесь
+          сотрудникам органов безопасности и&nbsp;правопорядка предоставлялась возможность заниматься спортом.
+          За&nbsp;годы работы общество &laquo;Динамо&raquo; принесло стране множество олимпийских наград.
+          &laquo;Динамо&raquo; занималось возрождением отечественного бокса, развивало стрелковый спорт и&nbsp;самбо.
+          Здесь&nbsp;же впервые в&nbsp;СССР появилась спортивная медицина.</p>
+
+        <p>Музей общества &laquo;Динамо&raquo; собирались организовать еще в&nbsp;1959&nbsp;году, но&nbsp;помещение под
+          него было выделено только после Олимпиады-80. Экспонаты храняться под трибунами БСА Центрального стадиона
+          &laquo;Динамо&raquo;, постоянная экспозиция размещается в&nbsp;двухэтажном здании у&nbsp;Северной трибуны.
+          В&nbsp;данное время коллекция музея насчитывает более 10,5&nbsp;тыс. экспонатов основного фонда
+          и&nbsp;7&nbsp;тыс. вспомогательного.</p>
+      </div>
+    </article>
+
+    <article class="textpage__text anchor" id="section-4">
+      <header class="textpage__text-head">
+        <h2 class="section-title">Сувениры</h2>
+      </header>
+
+      <div class="textpage__image-content">
+        <img src="/images/textpage/textpage-photo-2.jpg" alt="Описание изображения">
+      </div>
+
+      <div class="textpage__text-content">
+        <p>Текст&nbsp;&mdash; тестовый! Музей Всероссийского физкультурно-спортивного общества &laquo;Динамо&raquo;
+          начал свою работу в&nbsp;1988&nbsp;году. Инициатором его создания стал Совет ветеранов общества.
+          Физкультурно-спортивное общество &laquo;Динамо&raquo; ведет свою историю с&nbsp;1923&nbsp;года. Здесь
+          сотрудникам органов безопасности и&nbsp;правопорядка предоставлялась возможность заниматься спортом.
+          За&nbsp;годы работы общество &laquo;Динамо&raquo; принесло стране множество олимпийских наград.
+          &laquo;Динамо&raquo; занималось возрождением отечественного бокса, развивало стрелковый спорт и&nbsp;самбо.
+          Здесь&nbsp;же впервые в&nbsp;СССР появилась спортивная медицина.</p>
+
+        <p>Музей общества &laquo;Динамо&raquo; собирались организовать еще в&nbsp;1959&nbsp;году, но&nbsp;помещение под
+          него было выделено только после Олимпиады-80. Экспонаты храняться под трибунами БСА Центрального стадиона
+          &laquo;Динамо&raquo;, постоянная экспозиция размещается в&nbsp;двухэтажном здании у&nbsp;Северной трибуны.
+          В&nbsp;данное время коллекция музея насчитывает более 10,5&nbsp;тыс. экспонатов основного фонда
+          и&nbsp;7&nbsp;тыс. вспомогательного.</p>
+      </div>
+    </article>
+
+    <article class="textpage__text anchor" id="section-5">
+      <header class="textpage__text-head">
+        <h2 class="section-title">Карта музея</h2>
+      </header>
+
+      <div class="textpage__map">
+        <img src="/images/textpage/museum-map.jpg" alt="">
+        <div class="textpage__map-text">
+          <p>На&nbsp;втором этаже, в&nbsp;основной зоне экспозиции зритель движется
+            по&nbsp;временным блокам истории, каждый из&nbsp;которых отбивается эмоциональными медиа-коридорами,
+            которые позволяют прочувствовать эмоции
+            и&nbsp;мироощущение спортсменов в&nbsp;пиковые моменты.</p>
+        </div>
+      </div>
+
+      <div class="textpage__map-description">
+        <ul>
+          <li>
+            <p><strong>Хронология:</strong></p>
+            <p>Расцвет общества Динамо, 1923-1940</p>
+            <p>Динамо в период ВОВ, 1941-1945</p>
+          </li>
+          <li>
+            <p><strong>Хронология:</strong></p>
+            <p>Послевоенное время, 1945-1991</p>
+            <p>Динамо сегодня</p>
+          </li>
+          <li>
+            <p>Конференц-зал</p>
+          </li>
+          <li>
+            <p>Администрация</p>
+          </li>
+          <li>
+            <p>Стадион</p>
+          </li>
+          <li>
+            <p>Цифровые тренажеры</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="persons anchor" id="section-6">
+  <div class="persons__wrapper">
+    <h2 class="persons__title section-title">Команда</h2>
+
+    <ul class="persons__list">
+      {% for images in range(0, 8) -%}
+      <li class="persons__item">
+        <div class="persons__photo">
+          <img src="/images/person.jpg" alt="">
+        </div>
+        <h3>Полина Иванова</h3>
+        <p>директор <br>
+          Музея Динамо</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

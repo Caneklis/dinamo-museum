@@ -1,0 +1,21 @@
+.intro {
+	position: relative;
+
+	video {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+.intro__wrapper {
+	@include wrapper;
+	position: relative;
+}
+
+.intro__link {
+	position: absolute;
+	bottom: 90px;
+	right: 20px;
+}

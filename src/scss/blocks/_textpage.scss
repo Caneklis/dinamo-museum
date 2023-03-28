@@ -1,0 +1,168 @@
+.textpage {
+	padding-bottom: 95px;
+}
+
+.textpage__wrapper {
+	@include wrapper;
+
+	+ .promo {
+		margin-top: 60px;
+	}
+}
+
+.textpage__head-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.textpage__text {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 20px;
+	align-items: flex-start;
+	padding-top: 80px;
+
+	@include large {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.textpage__text-head {
+	grid-column: 1 / span 2;
+
+	@include large {
+		margin-bottom: 35px;
+	}
+}
+
+.textpage__image-content {
+	grid-column: 3 / span 4;
+	border-radius: 0 0 20px 0;
+	overflow: hidden;
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	+ .textpage__text-content {
+		grid-column: 7 / span 7;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@include large {
+		margin-bottom: 35px;
+	}
+}
+
+.textpage__text-content {
+	grid-column: 4 / span 8;
+	padding-left: 60px;
+	padding-right: 75px;
+
+	p {
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: size(17px);
+		line-height: 176%;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		@include mobile {
+			font-size: size(15px);
+		}
+	}
+
+	@include large {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+}
+
+.textpage__map {
+	grid-column: 4 / span 9;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	gap: 20px;
+	grid-row: 1 / 4;
+
+	@include large {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 35px;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+	}
+}
+
+.textpage__map-text {
+	grid-column: 2 / span 5;
+	grid-row: 1 / 2;
+	margin-top: auto;
+	padding-right: 100px;
+
+	@include mobile {
+		padding-right: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.textpage__map-description {
+	grid-column: 1 / span 3;
+	grid-row: 2 / 4;
+
+	ul {
+		@include list-reset;
+		counter-reset: maplist;
+
+		li {
+			position: relative;
+			margin-bottom: 7px;
+			padding-left: 37px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				counter-increment: maplist;
+				content: counter(maplist);
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				width: 23px;
+				height: 23px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-left: 2px;
+				color: #fff;
+				background-color: $green;
+				border-radius: 50%;
+				font-size: size(14px);
+				font-weight: 700;
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

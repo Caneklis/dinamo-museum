@@ -1,0 +1,169 @@
+.footer {
+	background-color: $blue-main;
+	color: #f3f1ef;
+}
+
+.footer__wrapper {
+	@include wrapper;
+	padding-top: 38px;
+	padding-bottom: 43px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 20px;
+	row-gap: 36px;
+	align-items: flex-start;
+
+	@include large {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.footer__contacts {
+	grid-column: 1 / span 3;
+	grid-row: 1 / 3;
+}
+
+.footer__partners {
+	grid-column: 4 / span 6;
+	grid-row: 1 / 2;
+}
+
+.footer__address {
+	font-style: normal;
+}
+
+.footer__contacts-address {
+	margin: 0;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #f3f1ef;
+}
+
+.footer__worktime-days {
+	margin: 0;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+}
+
+.footer__worktime-time {
+	margin: 0;
+	font-family: $b-font;
+	font-size: 70px;
+	line-height: 70px;
+	letter-spacing: 0.03em;
+}
+
+.footer__worktime {
+	margin-bottom: 30px;
+}
+
+.footer__contacts-phone,
+.footer__contacts-mail {
+	margin: 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+
+		&:hover {
+			color: $green;
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer__partners-list {
+	@include list-reset;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding-top: 50px;
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: auto;
+	}
+
+	@include mobile {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.footer__links {
+	grid-column: 11 / span 2;
+	grid-row: 1 / 3;
+}
+
+.footer__links-list {
+	@include list-reset;
+	margin-bottom: 25px;
+	padding-top: 18px;
+}
+
+.footer__links-item {
+	font-size: 14px;
+	line-height: 30px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.footer__social {
+	@include list-reset;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 42px;
+}
+
+.footer__social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: rgba(90, 137, 255, 0.37);
+	border-radius: 2px;
+	transition: background 0.3s ease-in-out;
+
+	&:hover {
+		background-color: $green;
+	}
+}
+
+.footer__copyright {
+	grid-column: 4 / span 6;
+	grid-row: 2 / 3;
+
+	p {
+		text-align: center;
+		margin: 0;
+		font-size: size(13px);
+		line-height: 20px;
+		color: #778cd2;
+		opacity: 0.6;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}

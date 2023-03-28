@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-size: $fz-default;
+	line-height: 24px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+.scroll-lock-ios {
+	position: fixed;
+
+	overflow: hidden;
+}
+
+.scroll-lock {
+	overflow: hidden;
+}
+
+.anchor {
+	scroll-margin-top: 200px;
+}

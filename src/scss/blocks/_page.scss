@@ -1,0 +1,20 @@
+.page {
+	height: 100%;
+	margin: 0;
+	// font-size: 18px;
+	font-family: $t-font;
+	// font-weight: 400;
+	// line-height: 27px;
+}
+.page__body {
+	min-height: 100%;
+	margin: 0;
+	background-color: #fff;
+	color: $black;
+	display: flex;
+	flex-direction: column;
+}
+
+.page__main {
+	flex-grow: 1;
+}

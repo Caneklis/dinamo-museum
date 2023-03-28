@@ -1,0 +1,134 @@
+---
+title: Главная
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+{% set currentPage = 'main' %}
+
+{% block content %}
+
+<section class="intro">
+  <video autoplay muted playsinline poster="images/poster.jpg">
+    <source src="/video/qatar.mp4" type="video/mp4">
+  </video>
+  <div class="intro__wrapper">
+    <a href="#promo" class="intro__link">
+      <svg width="49" height="198" viewBox="0 0 49 198" aria-hidden="true">
+        <use class="main-nav__icon-menu" href="/images/sprite_auto.svg#icon-arrow-bottom">
+        </use>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<section class="promo" id="promo">
+  <div class="promo__wrapper">
+    <div class="promo__slider  swiper">
+      <div class="swiper-wrapper">
+        <article class="promo__article  swiper-slide">
+          <div class="promo__text">
+            <p>Музей тщательно хранит историю спортивного общества, которое вырастило множество олимпийских чемпионов
+            </p>
+            <a href="#" class="button">Купить билет</a>
+          </div>
+          <div class="promo__title">
+            <h2><span>260</span> персоналий хранит <br>
+              медиатека Общества</h2>
+          </div>
+          <div class="promo__image">
+            <img src="/images/main-slider/hokkey.png" alt="">
+          </div>
+        </article>
+        <article class="promo__article  swiper-slide">
+          <div class="promo__text">
+            <p>Музей предлагает полное погружение в&nbsp;историю Общества &laquo;Динамо&raquo; &mdash;
+              с&nbsp;даты основания в&nbsp;1923&nbsp;г.
+              и&nbsp;до&nbsp;сегодняшних дней!
+            </p>
+            <a href="#" class="button">Купить билет</a>
+          </div>
+          <div class="promo__title">
+            <h2><span>700 <sup>м<sup>2</sup></sup></span> современной экспозиции,
+              наполненной мультимедийными
+              решениями</h2>
+          </div>
+          <div class="promo__image">
+            <img src="/images/main-slider/football.png" alt="">
+          </div>
+        </article>
+        <article class="promo__article  swiper-slide">
+          <div class="promo__text  promo__text--right">
+            <p>В&nbsp;экспозиции представлены оригинальные экспонаты &mdash;от первых значков &laquo;Динамо&raquo;
+              и&nbsp;исторических документов до&nbsp;медалей современности.
+            </p>
+            <a href="#" class="button">Купить билет</a>
+          </div>
+          <div class="promo__title">
+            <h2><span>200</span> уникальных экспонатов <br>
+              в экспозиции</h2>
+          </div>
+          <div class="promo__image  promo__image--left">
+            <img src="/images/main-slider/box.png" alt="">
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<div class="media-library">
+  <div class="media-library__wrapper">
+    <h2 class="media-library__title  section-title ">Медиатека</h2>
+    <ul class="media-library__list">
+      <li class="media-library__item">
+        <a href="" class="media-library__link">
+          <div class="media-library__image">
+            <img src="/images/media/media-1.jpg" alt="">
+          </div>
+          <h3>Легенды</h3>
+          <p>В&nbsp;этом разделе вы&nbsp;узнаете про удивительные судьбы спортсменов и&nbsp;участников Общества
+            &laquo;Динамо&raquo;, которые вписали свои имена в&nbsp;историю спорта и&nbsp;страны. Яшин, Бесков, Якушин,
+            Царев, Хомич &mdash;кто не&nbsp;знает эти великие имена!</p>
+        </a>
+      </li>
+      <li class="media-library__item">
+        <a href="" class="media-library__link">
+          <div class="media-library__image">
+            <img src="/images/media/media-2.jpg" alt="">
+          </div>
+          <h3>Стадионы</h3>
+          <p>В&nbsp;этом разделе вы&nbsp;узнаете про удивительные судьбы спортсменов и&nbsp;участников Общества
+            &laquo;Динамо&raquo;, которые вписали свои имена в&nbsp;историю спорта и&nbsp;страны. Яшин, Бесков, Якушин,
+            Царев, Хомич &mdash;кто не&nbsp;знает эти великие имена!</p>
+        </a>
+      </li>
+      <li class="media-library__item">
+        <a href="" class="media-library__link">
+          <div class="media-library__image">
+            <img src="/images/media/media-3.jpg" alt="">
+          </div>
+          <h3>Победы</h3>
+          <p>В&nbsp;этом разделе вы&nbsp;узнаете про удивительные судьбы спортсменов и&nbsp;участников Общества
+            &laquo;Динамо&raquo;, которые вписали свои имена в&nbsp;историю спорта и&nbsp;страны. Яшин, Бесков, Якушин,
+            Царев, Хомич &mdash;кто не&nbsp;знает эти великие имена!</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- <section class="attention">
+  <div class="attention__overlay">
+  </div>
+  <div class="attention__message">
+    <p>Внимание! В&nbsp;понедельник 5&nbsp;марта 2023 посещение музея для экскурсионных групп недоступно. Следите
+      за&nbsp;обновлениями
+      на&nbsp;сайте.</p>
+
+    <button class="attention__close  button" type="b
+    ">Понятно</button>
+  </div>
+</section> -->
+
+{% endblock %}
