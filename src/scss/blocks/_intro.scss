@@ -18,4 +18,8 @@
 	position: absolute;
 	bottom: 90px;
 	right: 20px;
+
+	@include mobile {
+		bottom: 30px;
+	}
 }

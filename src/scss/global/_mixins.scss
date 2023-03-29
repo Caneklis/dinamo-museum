@@ -85,6 +85,10 @@
 		color: $green;
 		background-color: #fff;
 	}
+
+	&:focus {
+		outline-color: #fff;
+	}
 }
 
 @mixin list-reset {

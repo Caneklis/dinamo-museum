@@ -37,9 +37,13 @@
 	margin: 0;
 	margin-bottom: 30px;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: size(20px);
 	line-height: 30px;
 	color: #f3f1ef;
+
+	@include large {
+		font-size: size(18px);
+	}
 }
 
 .footer__worktime-days {

@@ -1,0 +1,63 @@
+---
+title: Контакты
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="contacts">
+  <div class="contacts__wrapper">
+    <div class="contacts__map">
+      <img src="/images/map.jpg" alt="">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd4089648eecb18d4aa5f4f6ad2689ebd3cac71d24ae5deddd97c8f5e98d53c9&amp;source=constructor"
+              width="100%" height="528" frameborder="0"></iframe>
+    </div>
+    <div class="contacts__text">
+      <h2><span>Москва</span>
+        Ленинградский проспект, 36с28</h2>
+      <h3>На автомобиле</h3>
+      <p>Здесь описание как добраться на автомобиле при движении из центра, из области. Музей не располагает собственной
+        парковкой. Вы можете оставить свой автомобиль на прилегающих улицах в зоне платной городской парковки. Как
+        правило, в воскресенье и праздники парковка бесплатная.</p>
+
+      <h3>На общественном транспорте</h3>
+      <p>Здесь описание как добраться на метро. Текст тестовый. Вы можете оставить свой автомобиль на прилегающих улицах
+        в зоне платной городской парковки. Как правило, в воскресенье и праздники парковка бесплатная. Текст тестовый.
+        Текст тестовый. Текст тестовый.</p>
+    </div>
+    <div class="contacts__list">
+      <p class="contacts__phone"><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+      <p class="contacts__mail"><a href="mailto:info@dynamomuseum.ru">info@dynamomuseum.ru</a></p>
+      <p class="contacts__worktime">
+        <span>10:00–20:00</span>
+        Ежедневно, кроме понедельника<br>
+        Касса закрывается за 30 минут до окончания работы Музея
+      </p>
+    </div>
+  </div>
+  <img class="contacts__photo" src="/images/stadium-photo.jpg" alt="">
+</section>
+
+<section class="feedback">
+  <div class="feedback__wrapper">
+    <h2 class="feedback__title  section-title">Обратная связь</h2>
+    <form action="" method="POST" class="feedback__form">
+      <label>
+        <span class="visually-hidden">Ваше имя</span>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <span class="visually-hidden">Ваша электронная почта</span>
+        <input type="email" name="phone" placeholder="Ваша электронная почта" required>
+      </label>
+      <label>
+        <span class="visually-hidden">Сообщение</span>
+        <textarea name="message" placeholder="Сообщение" required></textarea>
+      </label>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

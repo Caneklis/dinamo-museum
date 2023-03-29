@@ -1,0 +1,44 @@
+.news__slide {
+	img ~ * {
+		height: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	&.swiper-slide-active {
+		img ~ * {
+			height: auto;
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	img {
+		margin-bottom: 28px;
+	}
+
+	a {
+		display: block;
+		color: $blue-main;
+		text-decoration: none;
+
+		p {
+			color: $black;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: size(22px);
+		line-height: 91%;
+		text-decoration: underline;
+	}
+}
+
+.news__date {
+	margin-bottom: 33px;
+	color: $green;
+	font-size: size(17px);
+	line-height: 118%;
+}

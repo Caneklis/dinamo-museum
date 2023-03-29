@@ -31,12 +31,21 @@
 		text-decoration: underline;
 		font-size: size(22px);
 		line-height: 20px;
+
+		@include mobile {
+			font-size: size(18px);
+			margin-bottom: 15px;
+		}
 	}
 
 	p {
 		margin: 0;
 		font-size: size(17px);
 		line-height: 20px;
+
+		@include mobile {
+			font-size: size(15px);
+		}
 	}
 
 	&:hover {

@@ -2,6 +2,41 @@
 	max-width: 1920px;
 	margin: 0 auto;
 	padding-top: 70px;
+	position: relative;
+
+	.swiper {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: flex;
+		align-items: center;
+		width: 72px;
+		height: 20px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		top: 50% !important;
+		transform: translateY(-50%);
+
+		&::after {
+			display: none;
+		}
+
+		@include large {
+			display: none;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 67px;
+	}
+
+	.swiper-button-next {
+		right: 67px;
+	}
 }
 
 .waterfall-slider__slide {

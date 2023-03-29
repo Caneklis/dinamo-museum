@@ -3,7 +3,7 @@ title: О Музее
 description: Description index
 ---
 {% extends "layouts/_layout.html" %}
-
+{% set currentPage = 'about' %}
 {% block content %}
 
 <section class="textpage anchor" id="section-1">
@@ -36,14 +36,28 @@ description: Description index
   </div>
 
   <div class="textpage__slider">
-    <div class="waterfall-slider swiper">
-      <div class="swiper-wrapper">
-        {% for images in range(0, 8) -%}
-        <div class="swiper-slide waterfall-slider__slide">
-          <img src="/images/textpage/textpage-slider-photo.jpg" alt="Описание для изображения">
+    <div class="waterfall-slider ">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for images in range(0, 8) -%}
+          <div class="swiper-slide waterfall-slider__slide">
+            <img src="/images/textpage/textpage-slider-photo.jpg" alt="Описание для изображения">
+          </div>
+          {%- endfor %}
         </div>
-        {%- endfor %}
       </div>
+      <button class="swiper-button-prev" type="button">
+        <svg width="76" height="16" viewBox="0 0 76 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M74.1855 9.198C74.7378 9.198 75.1855 8.75028 75.1855 8.198C75.1855 7.64571 74.7378 7.198 74.1855 7.198L74.1855 9.198ZM0.86512 7.49088C0.474594 7.88141 0.474594 8.51457 0.86512 8.9051L7.22908 15.2691C7.61961 15.6596 8.25277 15.6596 8.64329 15.2691C9.03382 14.8785 9.03382 14.2454 8.64329 13.8548L2.98644 8.19799L8.6433 2.54114C9.03382 2.15061 9.03382 1.51745 8.6433 1.12692C8.25277 0.7364 7.61961 0.7364 7.22908 1.12692L0.86512 7.49088ZM74.1855 7.198L1.57223 7.19799L1.57223 9.19799L74.1855 9.198L74.1855 7.198Z"
+                fill="#7EA7C1" />
+        </svg>
+      </button>
+      <button class="swiper-button-next" type="button">
+        <svg width="75" height="16" viewBox="0 0 75 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 7.19873C0.447715 7.19873 -9.32342e-08 7.64645 0 8.19873C9.32342e-08 8.75102 0.447715 9.19873 1 9.19873L1 7.19873ZM74.3204 8.90582C74.711 8.5153 74.711 7.88213 74.3204 7.49161L67.9565 1.12765C67.5659 0.737126 66.9328 0.737126 66.5423 1.12765C66.1517 1.51818 66.1517 2.15134 66.5423 2.54186L72.1991 8.19872L66.5423 13.8556C66.1517 14.2461 66.1517 14.8793 66.5423 15.2698C66.9328 15.6603 67.5659 15.6603 67.9565 15.2698L74.3204 8.90582ZM1 9.19873L73.6133 9.19872L73.6133 7.19872L1 7.19873L1 9.19873Z"
+                fill="#7EA7C1" />
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -85,7 +99,7 @@ description: Description index
                 медиатека Общества</h2>
             </div>
             <div class="promo__image">
-              <img src="images/main-slider/hokkey.png" alt="">
+              <img src="/images/main-slider/hokkey.png" alt="">
             </div>
           </article>
           <article class="promo__article  swiper-slide">
@@ -102,7 +116,7 @@ description: Description index
                 решениями</h2>
             </div>
             <div class="promo__image">
-              <img src="images/main-slider/football.png" alt="">
+              <img src="/images/main-slider/football.png" alt="">
             </div>
           </article>
           <article class="promo__article  swiper-slide">
@@ -117,7 +131,7 @@ description: Description index
                 в экспозиции</h2>
             </div>
             <div class="promo__image  promo__image--left">
-              <img src="images/main-slider/box.png" alt="">
+              <img src="/images/main-slider/box.png" alt="">
             </div>
           </article>
         </div>

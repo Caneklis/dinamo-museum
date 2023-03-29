@@ -3,12 +3,11 @@ title: Главная
 description: Description index
 ---
 {% extends "layouts/_layout.html" %}
-{% set currentPage = 'main' %}
 
 {% block content %}
 
 <section class="intro">
-  <video autoplay muted playsinline poster="images/poster.jpg">
+  <video autoplay muted playsinline poster="/images/poster.jpg">
     <source src="/video/qatar.mp4" type="video/mp4">
   </video>
   <div class="intro__wrapper">
@@ -21,7 +20,7 @@ description: Description index
   </div>
 </section>
 
-<section class="promo" id="promo">
+<section class="promo anchor" id="promo">
   <div class="promo__wrapper">
     <div class="promo__slider  swiper">
       <div class="swiper-wrapper">

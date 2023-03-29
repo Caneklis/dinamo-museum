@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1,
   });
 
-  const centeredSlider = new Swiper('.textpage__slider .swiper', {
-    // configure Swiper to use modules
+  const centeredSlider = new Swiper('.waterfall-slider .swiper', {
     modules: [ Navigation, EffectCoverflow],
     loop: false,
     speed: 1000,
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     centeredSlides: true,
     effect: 'coverflow',
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 2.5,
         coverflowEffect: {
@@ -42,8 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
           slideShadows: false,
         },
       },
-      // when window width is >= 640px
-      640: {
+      940: {
         slidesPerView: 4.4,
         coverflowEffect: {
           rotate: 0,
@@ -52,15 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       }
     },
-    // coverflowEffect: {
-    //     rotate: 0,
-    //     stretch: 80,
-    //     depth: 200,
-    //     modifier: 1,
-    //     slideShadows: false,
-    // },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
