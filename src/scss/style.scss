@@ -1,4 +1,5 @@
 @import '../../node_modules/swiper/swiper-bundle';
+@import '../components//accordion//style/data-accordion.scss';
 @import 'global/variables';
 @import 'global/mixins';
 @import 'global/fonts';
@@ -22,6 +23,8 @@
 @import 'blocks/contacts';
 @import 'blocks/feedback';
 @import 'blocks/news';
+@import 'blocks/faq';
+@import 'blocks/accordion';
 
 // @import "blocks/accordion.scss";
 // @import "blocks/data-accordion.scss";

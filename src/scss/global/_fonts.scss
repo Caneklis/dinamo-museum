@@ -1,5 +1,8 @@
 @include font-face(Roboto, 'roboto-v30-cyrillic_latin-regular', normal, normal);
+@include font-face(Roboto, 'roboto-v30-cyrillic_latin-300', 300, normal);
+@include font-face(Roboto, 'roboto-v30-cyrillic_latin-500', 500, normal);
 @include font-face(Roboto, 'roboto-v30-cyrillic_latin-700', 700, normal);
+
 @include font-face(Rainer, 'rainer', 500, normal, auto);
 // @include font-face('Sofia Sans', 'sofiasans-regular', normal, normal);
 @include font-face(

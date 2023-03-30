@@ -1,0 +1,76 @@
+.accordion__title {
+	margin: 0;
+	font-weight: 400;
+}
+
+.accordion__button {
+	position: relative;
+	padding: 0;
+	padding-left: 25px;
+	text-align: left;
+	font-family: $t-font;
+	font-size: size(19px);
+	line-height: 158%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&::before {
+		content: '+';
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 32px;
+		/* or 182% */
+
+		color: #6fb1bf;
+	}
+}
+
+.accordion__element {
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.is-active {
+		.accordion__title {
+			button {
+				color: #008992;
+				font-weight: 500;
+			}
+		}
+
+		.accordion__button {
+			&::before {
+				content: '–';
+			}
+		}
+	}
+}
+
+.accordion__content {
+	font-size: size(17px);
+	line-height: 153%;
+	color: #4a4a4a;
+
+	@include mobile {
+		font-size: size(15px);
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.accordion__wrapper {
+	padding: 15px 0 15px 38px;
+
+	@include mobile {
+		padding-left: 15px;
+	}
+}

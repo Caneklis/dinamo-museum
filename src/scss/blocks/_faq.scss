@@ -1,0 +1,39 @@
+.faq__wrapper {
+	@include wrapper;
+	padding-top: 86px;
+	padding-bottom: 150px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 20px;
+
+	@include large {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.faq__photo {
+	display: block;
+	width: 100%;
+	max-width: 1920px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.faq__title {
+	grid-column: 1 / span 3;
+	max-width: 285px;
+
+	@include large {
+		margin-bottom: 35px;
+		max-width: unset;
+	}
+}
+
+.faq__content {
+	grid-column: 4 / span 8;
+	padding-left: 60px;
+
+	@include mobile {
+		padding-left: 20px;
+	}
+}

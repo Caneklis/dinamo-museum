@@ -1,6 +1,7 @@
 import { initMenu } from './modules/main-nav';
 import Swiper, {Autoplay, EffectCoverflow, EffectFade, Navigation, Pagination} from 'swiper';
 import './modules/attention';
+import '../components/accordion/js/index';
 
 
 document.addEventListener('DOMContentLoaded', () => {
