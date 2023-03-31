@@ -41,7 +41,8 @@ description: Description index
         <div class="swiper-wrapper">
           {% for images in range(0, 8) -%}
           <div class="swiper-slide waterfall-slider__slide">
-            <img src="/images/textpage/textpage-slider-photo.jpg" alt="Описание для изображения">
+            <a href="/images/textpage/textpage-slider-photo.jpg" data-fancybox><img
+                   src="/images/textpage/textpage-slider-photo.jpg" alt="Описание для изображения"></a>
           </div>
           {%- endfor %}
         </div>
@@ -75,11 +76,22 @@ description: Description index
           &laquo;Динамо&raquo; занималось возрождением отечественного бокса, развивало стрелковый спорт и&nbsp;самбо.
           Здесь&nbsp;же впервые в&nbsp;СССР появилась спортивная медицина.</p>
 
-        <p>Музей общества &laquo;Динамо&raquo; собирались организовать еще в&nbsp;1959&nbsp;году, но&nbsp;помещение под
-          него было выделено только после Олимпиады-80. Экспонаты храняться под трибунами БСА Центрального стадиона
-          &laquo;Динамо&raquo;, постоянная экспозиция размещается в&nbsp;двухэтажном здании у&nbsp;Северной трибуны.
-          В&nbsp;данное время коллекция музея насчитывает более 10,5&nbsp;тыс. экспонатов основного фонда
-          и&nbsp;7&nbsp;тыс. вспомогательного.</p>
+        <div class="read-more" data-more>
+          <div class="read-more__content" data-more-content data-more-height="80" style="height: 80px">
+            <p>Музей общества &laquo;Динамо&raquo; собирались организовать еще в&nbsp;1959&nbsp;году, но&nbsp;помещение
+              под
+              него было выделено только после Олимпиады-80. Экспонаты храняться под трибунами БСА Центрального стадиона
+              &laquo;Динамо&raquo;, постоянная экспозиция размещается в&nbsp;двухэтажном здании у&nbsp;Северной трибуны.
+              В&nbsp;данное время коллекция музея насчитывает более 10,5&nbsp;тыс. экспонатов основного фонда
+              и&nbsp;7&nbsp;тыс. вспомогательного.</p>
+          </div>
+          <div class="read-more__footer" data-more-footer>
+            <a href="#" class="read-more__btn" data-more-trigger data-more-text-more="Развернуть"
+               data-more-text-less="Свернуть">
+              Развернуть
+            </a>
+          </div>
+        </div>
       </div>
     </article>
   </div>

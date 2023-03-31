@@ -2,7 +2,8 @@ import { initMenu } from './modules/main-nav';
 import Swiper, {Autoplay, EffectCoverflow, EffectFade, Navigation, Pagination} from 'swiper';
 import './modules/attention';
 import '../components/accordion/js/index';
-
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
+import{ readMoreLess } from './modules/read-more'
 
 document.addEventListener('DOMContentLoaded', () => {
   initMenu();
@@ -55,4 +56,29 @@ document.addEventListener('DOMContentLoaded', () => {
         prevEl: '.swiper-button-prev',
     },
   });
+
+  Fancybox.bind("[data-fancybox]", {
+    Thumbs: false,
+    dragToClose: false,
+    contentClick: false,
+    Images: {
+      zoom: true,
+    },
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],
+        right: ['close'],
+      },
+    },
+    Carousel: {
+      Navigation: false,
+    },
+  });
+
+  readMoreLess();
+
+  const alc_date = new Date();
+  alc_date.setDate(alc_date.getDate() + 1);
+  document.cookie = "alertcookie=1;path=/;expires=" + alc_date.toGMTString();
 })

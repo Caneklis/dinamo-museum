@@ -75,6 +75,10 @@
 			margin-bottom: 0;
 		}
 
+		+ .read-more {
+			margin-top: 20px;
+		}
+
 		@include mobile {
 			font-size: size(15px);
 		}

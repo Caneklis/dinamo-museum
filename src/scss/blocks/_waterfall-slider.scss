@@ -7,6 +7,10 @@
 	.swiper {
 		max-width: 1500px;
 		margin: 0 auto;
+
+		a {
+			outline: none;
+		}
 	}
 
 	.swiper-button-prev,
