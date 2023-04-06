@@ -55,3 +55,20 @@ body {
 .fancybox__backdrop {
 	background: rgba(26, 36, 99, 0.7);
 }
+
+.__qt_quick_use {
+	background: rgba(26, 36, 99, 0.7) !important;
+}
+
+.__qt_window {
+	width: 100% !important;
+	max-width: 960px !important;
+}
+
+.__qt_quick_use table tr td .__qt_window {
+	box-shadow: none !important;
+}
+
+.__qt_close {
+	// background-color: $green;
+}

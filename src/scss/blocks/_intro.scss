@@ -1,11 +1,16 @@
 .intro {
 	position: relative;
+	margin-top: -178px;
 
 	video {
 		display: block;
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
+	}
+
+	@include large {
+		margin-top: 0;
 	}
 }
 

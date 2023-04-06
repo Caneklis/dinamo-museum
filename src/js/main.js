@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       940: {
         slidesPerView: 4.4,
+        initialSlide: 2,
         coverflowEffect: {
           rotate: 0,
           scale: 0.8,
