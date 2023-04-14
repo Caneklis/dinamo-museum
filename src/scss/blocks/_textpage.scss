@@ -46,6 +46,7 @@
 	grid-column: 3 / span 4;
 	border-radius: 0 0 20px 0;
 	overflow: hidden;
+	max-width: max-content;
 
 	img {
 		display: block;
@@ -68,6 +69,25 @@
 	grid-column: 4 / span 8;
 	padding-left: 60px;
 	padding-right: 75px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin: 0;
+		margin-bottom: 33px;
+		font-weight: 500;
+		font-family: $b-font;
+	}
+
+	h1 {
+		font-size: size(39px);
+		line-height: 39px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #1a2463;
+	}
 
 	p {
 		margin: 0;
@@ -255,4 +275,29 @@ a.textpage__card-phone {
 	line-height: 130%;
 	color: $blue-main;
 	text-decoration: none;
+}
+
+.textpage__slider {
+	.waterfall-slider {
+		.swiper-button-prev,
+		.swiper-button-next {
+			top: calc(60px + 50%) !important;
+		}
+	}
+}
+
+.textpage-date {
+	grid-column: 1 / span 2;
+	font-family: $b-font;
+	font-size: size(39px);
+	line-height: 1;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: $green;
+
+	@include large {
+		margin-bottom: 15px;
+		font-size: size(25px);
+	}
 }

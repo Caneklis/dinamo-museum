@@ -57,9 +57,9 @@
 .persons__item {
 	h3 {
 		margin: 0;
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 		font-size: size(19px);
-		line-height: 158%;
+		line-height: 130%;
 		color: $green;
 
 		@include mobile {

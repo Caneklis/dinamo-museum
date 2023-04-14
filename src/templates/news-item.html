@@ -1,0 +1,39 @@
+---
+title: Страница новости
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+{% set currentPage = 'about' %}
+{% block content %}
+
+<section class="textpage anchor" id="section-1">
+  <img class="textpage__head-image" src="/images/news-item-banner.jpg" alt="Описание изображения">
+
+
+  <div class="textpage__wrapper">
+    <article class="textpage__text anchor">
+      <div class="textpage-date">
+        14.04.2023
+      </div>
+
+      <div class="textpage__image-content">
+        <img src="/images/textpage/textpage-photo-1.jpg" alt="Описание изображения">
+      </div>
+
+      <div class="textpage__text-content">
+        <h1>ПРИНЦИПИАЛЬНО ОДОБРИТЬ СОЗДАНИЕ ОБЩЕСТВА</h1>
+        <p>Ровно 100 лет назад, 14&nbsp;апреля 1923 года таким решением завершилось собрание Бюро ячейки РКП.
+          На&nbsp;нем обсуждали стоит&nbsp;ли организовывать добровольное спортивное общество &laquo;Динамо&raquo;,
+          которое должно было объединить сотрудников ГПУ, красноармейцев ГПУ и&nbsp;их&nbsp;шефов фабрик и&nbsp;заводов.
+        </p>
+
+        <p>Как мы&nbsp;знаем, благодаря такому положительному намерению чуть позже &laquo;Динамо&raquo; соберёт вокруг
+          себя множество талантливых спортсменов, тренеров и&nbsp;будущих чемпионов! И&nbsp;девиз &laquo;Сила
+          в&nbsp;движении&raquo; навсегда будет вписан в&nbsp;историю московского спорта.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+{% endblock %}

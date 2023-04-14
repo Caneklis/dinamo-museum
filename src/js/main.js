@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   Fancybox.bind("[data-fancybox]", {
-    Thumbs: false,
+    Thumbs: {
+      type: "classic",
+    },
     dragToClose: false,
     contentClick: false,
     Images: {
@@ -74,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
     Carousel: {
-      Navigation: false,
+      Navigation: true,
     },
   });
 

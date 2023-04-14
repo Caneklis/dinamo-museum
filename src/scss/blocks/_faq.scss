@@ -40,4 +40,8 @@
 	@include mobile {
 		padding-left: 20px;
 	}
+
+	a {
+		color: $green;
+	}
 }

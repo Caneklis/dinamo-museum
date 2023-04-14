@@ -41,7 +41,8 @@ description: Description index
         <div class="swiper-wrapper">
           {% for images in range(0, 8) -%}
           <div class="swiper-slide waterfall-slider__slide">
-            <a href="/images/textpage/textpage-slider-photo.jpg" data-fancybox><img
+            <!-- data-fancybox="gallery" - gallery связывает изображения в галерею. -->
+            <a href="/images/textpage/textpage-slider-photo.jpg" data-fancybox="gallery"><img
                    src="/images/textpage/textpage-slider-photo.jpg" alt="Описание для изображения"></a>
           </div>
           {%- endfor %}

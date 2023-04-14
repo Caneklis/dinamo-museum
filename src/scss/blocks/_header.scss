@@ -36,6 +36,7 @@
 
 .header__btn {
 	@include btn;
+	margin-left: auto;
 }
 
 .header__subnav {

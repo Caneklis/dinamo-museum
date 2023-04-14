@@ -72,3 +72,16 @@ body {
 .__qt_close {
 	// background-color: $green;
 }
+
+.fancybox__thumbs {
+	opacity: 1;
+	background: $blue-main;
+}
+
+.f-button {
+	color: $green !important;
+}
+
+.f-button.is-next {
+	right: 0 !important;
+}
