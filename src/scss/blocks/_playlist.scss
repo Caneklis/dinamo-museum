@@ -1,0 +1,36 @@
+.playlist {
+	padding-top: 45px;
+}
+
+.playlist__player {
+	margin-left: -40px;
+
+	@include mobile {
+		margin-left: 0;
+	}
+
+	.plyr__controls {
+		padding: 0;
+	}
+}
+
+.playlist__list {
+	@include list-reset;
+	padding-top: 40px;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 40px;
+
+	@include mobile {
+		font-size: 16px;
+		line-height: 1.8;
+	}
+
+	.active {
+		color: $green;
+	}
+}
+
+.playlist__item {
+	cursor: pointer;
+}

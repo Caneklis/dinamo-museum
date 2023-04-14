@@ -1,0 +1,44 @@
+---
+title: Музыка
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="media">
+  <img class="media__photo" src="/images/media-music-photo.jpg" alt="">
+  <div class="media__wrapper">
+    <h2 class="media__title section-title">{{title}}</h2>
+
+    <section class="media__content">
+      <p>Подборка песен об&nbsp;Обществе &laquo;Динамо&raquo;, созданных и&nbsp;записанных в&nbsp;разные
+        годы&nbsp;&mdash; о&nbsp;спортивном духе и&nbsp;воле к&nbsp;победам. Здесь вы&nbsp;найдете гимны футбольного,
+        хоккейного и&nbsp;баскетбольного клубов &laquo;Динамо&raquo;, ретро записи в&nbsp;исполнении Иосифа Кобзона
+        и&nbsp;Людмилы Лядовой, современные фанатские композиции. Слушайте и&nbsp;заряжайтесь!</p>
+      <section class="media__music">
+        <div class="playlist">
+          <div class="playlist__player">
+            <audio controls class="plyr"></audio>
+          </div>
+          <ul class="playlist__list">
+            <li class="playlist__item" data-id="0" data-audio="/files/music/lyadova-ya-boleyu-za-dinamo.mp3">Людмила
+              Лядова. А я болею за Динамо</li>
+            <li class="playlist__item" data-id="1" data-audio="/files/music/dmhm.mp3"> Сергей Арутюнов. Гимн Динамо</li>
+            <li class="playlist__item" data-id="2" data-audio="/files/music/nz-vot-mi-i-doma.mp3">NZ - Вот мы и дома
+            </li>
+            <li class="playlist__item" data-id="3" data-audio="/files/music/marshal-dinamo-mi-s-toboi-vsegda.mp3">Маршал
+              - Динамо мы с тобой всегда</li>
+          </ul>
+        </div>
+        <!-- <audio class="js-player" controls>
+          <source src="/files/music/chemp.mp3" type="audio/mp3" />
+        </audio> -->
+      </section>
+    </section>
+  </div>
+</section>
+
+
+
+{% endblock %}

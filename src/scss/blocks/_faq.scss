@@ -6,6 +6,10 @@
 	grid-template-columns: repeat(12, 1fr);
 	column-gap: 20px;
 
+	&--no-pt {
+		padding-top: 0;
+	}
+
 	@include large {
 		display: flex;
 		flex-direction: column;

@@ -1,6 +1,18 @@
+:root {
+	--plyr-range-track-height: 3px;
+	--plyr-color-main: #53abbe;
+	--plyr-range-thumb-height: 10px;
+	--plyr-range-thumb-background: var(--plyr-color-main);
+	--plyr-audio-controls-background: transparent;
+	--plyr-audio-control-background-hover: transparent;
+	--plyr-range-thumb-shadow: none;
+	--plyr-badge-border-radius: 0;
+}
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
-@import '../components//accordion//style/data-accordion.scss';
+@import '../../node_modules/plyr/dist/plyr';
+
+@import '../components/accordion//style/data-accordion.scss';
 @import 'global/variables';
 @import 'global/mixins';
 @import 'global/fonts';
@@ -25,8 +37,10 @@
 @import 'blocks/feedback';
 @import 'blocks/news';
 @import 'blocks/faq';
+@import 'blocks/media';
 @import 'blocks/read-more';
 @import 'blocks/accordion';
+@import 'blocks/playlist';
 
 // @import "blocks/accordion.scss";
 // @import "blocks/data-accordion.scss";
