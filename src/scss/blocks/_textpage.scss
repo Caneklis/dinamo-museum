@@ -138,6 +138,10 @@
 		padding-left: 0;
 		padding-right: 30px;
 	}
+
+	@include mobile {
+		display: grid;
+	}
 }
 
 .textpage__map {
@@ -230,6 +234,7 @@
 
 	@include mobile {
 		grid-template-columns: 1fr;
+		order: -1;
 	}
 }
 

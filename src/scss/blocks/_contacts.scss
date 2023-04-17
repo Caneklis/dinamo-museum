@@ -73,6 +73,15 @@
 				font-size: size(25px);
 			}
 		}
+
+		a {
+			text-decoration: none;
+			color: $green;
+		}
+	}
+
+	a {
+		color: inherit;
 	}
 
 	h3 {
@@ -85,7 +94,7 @@
 	p {
 		margin: 0;
 		font-size: size(17px);
-		line-height: 118%;
+		line-height: 176%;
 
 		@include mobile {
 			font-size: size(15px);
@@ -172,10 +181,15 @@
 
 	span {
 		font-family: $b-font;
+		font-weight: 500;
 		font-size: size(71px);
 		line-height: 130%;
-		letter-spacing: 0.02em;
+		// letter-spacing: 0.02em;
 		text-transform: uppercase;
+
+		@include mobile {
+			letter-spacing: normal;
+		}
 	}
 }
 

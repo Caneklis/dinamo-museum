@@ -45,6 +45,8 @@
 			left: 0;
 			width: 100vw;
 			padding-top: 130px;
+			padding-bottom: 45px;
+			overflow-y: scroll;
 			background-color: rgba(#1a2463, 0.9);
 
 			.main-nav__item {
@@ -95,7 +97,7 @@
 		height: 60px;
 		padding: 0;
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		margin-left: auto;
 		background-color: transparent;
 		border: none;

@@ -13,6 +13,12 @@
 		align-items: flex-end;
 	}
 
+	.swiper-slide {
+		@include mobile {
+			min-height: 600px;
+		}
+	}
+
 	.swiper-pagination {
 		display: flex;
 		justify-content: flex-end;
@@ -88,6 +94,18 @@
 		font-size: size(24px);
 	}
 
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: auto;
+		padding-bottom: 35px;
+
+		a {
+			order: -1;
+			margin-bottom: 25px;
+		}
+	}
+
 	&--right {
 		grid-column: 8 / span 5;
 		padding-left: 50px;
@@ -115,6 +133,10 @@
 
 		&:last-of-type {
 			margin-bottom: 80px;
+
+			@include mobile {
+				margin-bottom: 45px;
+			}
 		}
 	}
 
@@ -124,6 +146,10 @@
 		@include desktop {
 			margin-left: auto;
 			margin-right: auto;
+		}
+
+		@include mobile {
+			margin-left: 0;
 		}
 	}
 }
@@ -204,6 +230,10 @@
 	@include large {
 		grid-column: 6 / span 5;
 		grid-row: 2 / 3;
+	}
+
+	@include mobile {
+		padding-top: 0;
 	}
 
 	&--left {

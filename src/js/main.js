@@ -5,6 +5,7 @@ import '../components/accordion/js/index';
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import{ readMoreLess } from './modules/read-more';
 import Plyr from 'plyr';
+import './modules/form'
 
 document.addEventListener('DOMContentLoaded', () => {
   initMenu();
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       320: {
         slidesPerView: 2.5,
+        initialSlide: 1,
         coverflowEffect: {
           rotate: 0,
           scale: 0.8,
