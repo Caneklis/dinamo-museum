@@ -5,7 +5,7 @@ import '../components/accordion/js/index';
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import{ readMoreLess } from './modules/read-more';
 import Plyr from 'plyr';
-import './modules/form'
+// import './modules/form'
 
 document.addEventListener('DOMContentLoaded', () => {
   initMenu();
