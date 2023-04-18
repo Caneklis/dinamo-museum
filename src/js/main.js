@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       320: {
         slidesPerView: 2.5,
-        initialSlide: 1,
+        initialSlide: 2,
         coverflowEffect: {
           rotate: 0,
           scale: 0.8,
