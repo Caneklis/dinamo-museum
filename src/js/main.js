@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1,
   });
 
-  const centeredSlider = new Swiper('.waterfall-slider .swiper', {
+  const centeredSlider = new Swiper('.textpage__slider .waterfall-slider .swiper', {
     modules: [ Navigation, EffectCoverflow],
     loop: false,
     speed: 1000,
@@ -48,6 +48,42 @@ document.addEventListener('DOMContentLoaded', () => {
       940: {
         slidesPerView: 4.4,
         initialSlide: 2,
+        coverflowEffect: {
+          rotate: 0,
+          scale: 0.8,
+          slideShadows: false,
+        },
+      }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  });
+
+  const newsSlider = new Swiper('.news__slider .waterfall-slider .swiper', {
+    modules: [ Navigation, EffectCoverflow],
+    loop: false,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+    },
+    grabCursor: true,
+    centeredSlides: true,
+    effect: 'coverflow',
+    breakpoints: {
+      320: {
+        slidesPerView: 2.5,
+        initialSlide: 0,
+        coverflowEffect: {
+          rotate: 0,
+          scale: 0.8,
+          slideShadows: false,
+        },
+      },
+      940: {
+        slidesPerView: 4.4,
+        initialSlide: 0,
         coverflowEffect: {
           rotate: 0,
           scale: 0.8,
