@@ -71,7 +71,7 @@
 .footer__worktime-days {
 	margin: 0;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: size(12px);
 	line-height: 20px;
 	letter-spacing: 0.02em;
 }
@@ -97,7 +97,7 @@
 .footer__contacts-mail {
 	margin: 0;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: size(20px);
 	line-height: 30px;
 
 	a {
@@ -155,7 +155,7 @@
 }
 
 .footer__links-item {
-	font-size: 14px;
+	font-size: size(14px);
 	line-height: 30px;
 
 	&:last-of-type {

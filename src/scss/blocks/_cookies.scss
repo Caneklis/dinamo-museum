@@ -1,0 +1,80 @@
+.cookies {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 25px 0;
+	background-color: rgba($blue-main, 0.9);
+	font-size: size(17px);
+	line-height: 118%;
+	color: #ffffff;
+	transform: translateY(110%);
+	transition-delay: 0.5s;
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+	z-index: 10;
+
+	&.is-active {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInBottom {
+	from {
+		transform: translateY(110%);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutBottom {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(110%);
+	}
+}
+
+.cookies__wrapper {
+	@include wrapper;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cookies__text {
+	flex-grow: 1;
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: inherit;
+	}
+}
+
+.cookies__btn {
+	font-family: inherit;
+	font-size: size(17px);
+	line-height: 118%;
+	font-weight: 700;
+	color: #53abbe;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: #fff;
+	}
+}

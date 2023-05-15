@@ -11,6 +11,7 @@
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
 @import '../../node_modules/plyr/dist/plyr';
+// @import '../../node_modules/bvi/dist/css/bvi';
 
 @import '../components/accordion//style/data-accordion.scss';
 @import 'global/variables';
@@ -42,6 +43,7 @@
 @import 'blocks/accordion';
 @import 'blocks/playlist';
 @import 'blocks/error-page';
+@import 'blocks/cookies';
 
 // @import "blocks/accordion.scss";
 // @import "blocks/data-accordion.scss";

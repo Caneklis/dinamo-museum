@@ -10,8 +10,6 @@ html {
 	// -webkit-font-smoothing: antialiased;
 	// -moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-	font-size: $fz-default;
-	line-height: 24px;
 }
 
 body {
@@ -84,4 +82,20 @@ body {
 
 .f-button.is-next {
 	right: 0 !important;
+}
+
+.contrast-version {
+	display: none;
+
+	@media (min-width: 1024px) {
+		display: inline-flex;
+		flex-grow: 0.5;
+		margin: 0 auto;
+		outline: none;
+		background-color: transparent;
+		border: none;
+		font-size: size(35px);
+		font-family: $b-font;
+		cursor: pointer;
+	}
 }

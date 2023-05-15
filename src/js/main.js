@@ -5,6 +5,10 @@ import '../components/accordion/js/index';
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import{ readMoreLess } from './modules/read-more';
 import Plyr from 'plyr';
+import './modules/contrast-switcher';
+import '../components/cookies/js/index';
+
+// import bvi from 'bvi';
 // import './modules/form'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -195,5 +199,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+  // new isvek.Bvi({
+  //   fontSize: 26,
+  //   lineHeight: 'big',
+  //   images: false,
+  //   speech: false
+  // });
 
 })
